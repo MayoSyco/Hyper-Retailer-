@@ -1,0 +1,73 @@
+mkdir my-ecommerce-site
+cd my-ecommerce-site
+touch index.html styles.css script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My E-commerce Site</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My E-commerce Store</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product" id="product1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+    
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+function addToCart(product) {
+    alert(product + ' has been added to your cart!');
+}
+git init
+git add .
+git commit -m "Initial commit"
